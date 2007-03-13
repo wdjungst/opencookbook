@@ -1,0 +1,15 @@
+#summary Collection of links to cocktail databases, software etc.
+
+= Cocktail databases =
+  * http://en.wikipedia.org/wiki/List_of_cocktails
+  * http://www.cocktaildb.com
+  * http://www.barnonedrinks.com
+  * http://www.webtender.com/
+  * http://www.mixed-drink-inc.com/
+
+= Collections of links =
+  * http://www.webtender.com/index/Recipes/Collections/
+  * http://www.bardrinks.com/links/category.asp?cat=Other%20Recipe%20Sites
+
+= Bartending software =
+
