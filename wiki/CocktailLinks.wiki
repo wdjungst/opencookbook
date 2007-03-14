@@ -18,6 +18,7 @@
 
 = Bartending software =
   * http://www.livingcookbook.com/
+  * http://www.barmix-software.de/
 
 = Books =
   * http://en.wikibooks.org/wiki/Bartending
