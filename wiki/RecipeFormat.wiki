@@ -1,12 +1,11 @@
 #summary Covers the recipe format issues
+#labels Phase-Requirements
 
-= Introduction =
+= Open recipe formats =
 
-Add your content here.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * *RecipeML*
+    * Homepage: http://www.formatdata.com/recipeml/
+    * DTD: http://www.formatdata.com/recipeml/recipeml.dtd
+  * *Eat drink feel good" 
+    * Homepage: dead
+    * DTD: http://opencookbook.googlecode.com/svn/trunk/ocobo.docs/misc/eatdrinkfeelgood.dtd
