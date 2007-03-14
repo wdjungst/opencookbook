@@ -12,5 +12,5 @@
     * Homepage: dead
     * DTD: http://opencookbook.googlecode.com/svn/trunk/ocobo.docs/misc/eatdrinkfeelgood.dtd
 
-= Other =
+= Misc. =
   * USDA National Nutrient Database http://www.nal.usda.gov/fnic/foodcomp/search/
