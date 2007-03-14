@@ -16,7 +16,7 @@
   * My ingredients.
     * Available (what's in my bar).
     * Not available (what I ran off).
-      * Add to sopping list.
+      * Add to shopping list.
     * Add things to my ingredients.
       * Search and add.
       * From shopping list.
