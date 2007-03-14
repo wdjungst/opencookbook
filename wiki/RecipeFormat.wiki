@@ -6,6 +6,6 @@
   * *RecipeML*
     * Homepage: http://www.formatdata.com/recipeml/
     * DTD: http://www.formatdata.com/recipeml/recipeml.dtd
-  * *Eat drink feel good" 
+  * *Eat drink feel good*
     * Homepage: dead
     * DTD: http://opencookbook.googlecode.com/svn/trunk/ocobo.docs/misc/eatdrinkfeelgood.dtd
