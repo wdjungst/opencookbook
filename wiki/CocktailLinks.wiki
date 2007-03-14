@@ -1,4 +1,5 @@
 #summary Collection of links to cocktail databases, software etc.
+#labels Phase-Requirements
 
 = Cocktail databases =
   * http://en.wikipedia.org/wiki/List_of_cocktails
