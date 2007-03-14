@@ -1,9 +1,10 @@
 #summary Covers the recipe format issues
 #labels Phase-Requirements
-= TBD =
- * sdsd
-= Open recipe formats =
+= Open questions =
+  * RecipeML for cocktails?
+  * Extract simplified DTD / Schema?
 
+= Open recipe formats =
   * *RecipeML*
     * Homepage: http://www.formatdata.com/recipeml/
     * DTD: http://www.formatdata.com/recipeml/recipeml.dtd
@@ -11,3 +12,5 @@
     * Homepage: dead
     * DTD: http://opencookbook.googlecode.com/svn/trunk/ocobo.docs/misc/eatdrinkfeelgood.dtd
 
+= Other =
+  * USDA National Nutrient Database http://www.nal.usda.gov/fnic/foodcomp/search/
