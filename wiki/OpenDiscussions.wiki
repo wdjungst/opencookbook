@@ -1,0 +1,18 @@
+#summary A sandbox for open discussions
+#labels Deprecated
+
+= Ideas for agenda 18.03 =
+  * project status
+  * ooa
+  * conspiracy
+  * agile
+    * automation
+    * tests
+    * continuous integration
+    * issue (task) oriented
+    * mylar?
+  * TBD
+
+= Platform =
+
+
