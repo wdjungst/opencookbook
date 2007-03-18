@@ -38,6 +38,10 @@
     * Add P and Q into your shopping list.
     * Remove X from your favorite recipes.
   * Estimate the price.
+  * Create a recipe
+    * Intellegent natural language entry. 
+       * Lookups. 
+       * The enetered text is parsed and structured.
 
 =Shopping list=
   * Add unavailable ingredients to the shopping list.
