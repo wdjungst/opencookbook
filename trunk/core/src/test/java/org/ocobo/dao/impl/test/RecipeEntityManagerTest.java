@@ -36,7 +36,7 @@ public class RecipeEntityManagerTest extends AbstractEntityManagerTest {
 
 
     final Recipe beta = load(id);
-    assertEquals("Recipes differ.", alpha, beta);
+    assertEquals("Recipe titles differ.", alpha.getTitle(), beta.getTitle());
   }
 
   public <T> void save(T a) {
