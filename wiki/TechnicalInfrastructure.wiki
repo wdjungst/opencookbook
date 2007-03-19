@@ -1,0 +1,26 @@
+#summary Technical infrastructure for the project.
+
+= Maven =
+
+The project is built with Maven2.
+
+= Subversion =
+
+Source code is managed via Subversion.
+Please 
+
+= Eclipse =
+
+Primary IDE is Eclipse.
+
+== Code style ==
+
+Please use the following [http://opencookbook.googlecode.com/files/codestyle.xml code style] for Eclipse.
+
+== Subversion for Eclipse ==
+
+  * [http://subclipse.tigris.org Subclipse]
+
+== Maven2 for Eclipse ==
+
+  * [http://m2eclipse.codehaus.org/ The Maven Integration for Eclipse]
