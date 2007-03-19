@@ -10,6 +10,9 @@ The project is built with Maven2.
 
 Source code is managed via Subversion.
 
+Generated code is excluded from SVN. This means that all the {{{**/target}}} directories must be excluded by default.
+Exclusion is done by adding directory name to the {{{svn:ignore}}} property.
+
 = Eclipse =
 
 Primary IDE is Eclipse.
@@ -25,3 +28,4 @@ Please use the following [http://opencookbook.googlecode.com/files/codestyle.xml
 == Maven2 for Eclipse ==
 
   * [http://m2eclipse.codehaus.org/ The Maven Integration for Eclipse] - Eclipse plugin for Maven2.
+
