@@ -20,8 +20,8 @@ Please use the following [http://opencookbook.googlecode.com/files/codestyle.xml
 
 == Subversion for Eclipse ==
 
-  * [http://subclipse.tigris.org Subclipse]
+  * [http://subclipse.tigris.org Subclipse] - Eclipse plugin for Subversion.
 
 == Maven2 for Eclipse ==
 
-  * [http://m2eclipse.codehaus.org/ The Maven Integration for Eclipse]
+  * [http://m2eclipse.codehaus.org/ The Maven Integration for Eclipse] - Eclipse plugin for Maven2.
