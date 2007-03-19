@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xml-java-binding-schema>
+	<options package="org.ocobo.recipeml.dtd"/>
+	<element name="nutrient-group" type="class">
+		<attribute name="title" property="Entitled"/>
+	</element>
+	<element name="setting" type="class">
+		<attribute name="value" property="ValueContent"/>
+	</element>
+</xml-java-binding-schema>
