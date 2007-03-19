@@ -16,9 +16,15 @@ public interface RecipeDao {
 
   /**
    * Loads the recipe by id.
-   * @param id
-   * @return
+   * @param id recipe id.
+   * @return Loaded recipe.
    */
   public Recipe loadRecipe(int id) throws RecipeException;
 
+  /**
+   * Removes the recipe by id.
+   * @param id recipe id.
+   * @return Removed recipe.
+   */
+  public Recipe removeRecipe(int id) throws RecipeException;
 }
