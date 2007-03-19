@@ -4,6 +4,8 @@
 
 The project is built with Maven2.
 
+  * [http://opencookbook.googlecode.com/files/BetterBuildsWithMaven.pdf Better Builds with Maven] - a nice book on Maven.
+
 = Subversion =
 
 Source code is managed via Subversion.
