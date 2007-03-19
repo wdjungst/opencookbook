@@ -7,7 +7,6 @@ The project is built with Maven2.
 = Subversion =
 
 Source code is managed via Subversion.
-Please 
 
 = Eclipse =
 
