@@ -1,5 +1,6 @@
 package org.ocobo.dao.test;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.ocobo.dao.RecipeDao;
 import org.ocobo.model.Ingredient;
@@ -18,6 +19,7 @@ public class RecipeDaoTest {
     this.recipeDao = recipeDao;
   }
 
+  @Ignore
   @Test
   public void simpleRoundtrip() throws Exception {
 
