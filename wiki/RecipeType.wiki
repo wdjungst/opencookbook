@@ -1,6 +1,8 @@
 #summary Recipe Types.
 
 = Recipe Types =
+  * Name
+  * Description
 
 == Drink Types ==
   * Punches
