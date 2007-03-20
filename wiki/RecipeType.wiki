@@ -2,7 +2,7 @@
 
 = Recipe Types =
   * Name ([Text])
-  * Description ([WikiText])
+  * Description ([WikiText Wiki text])
   * Icons
 
 == Drink Types ==
