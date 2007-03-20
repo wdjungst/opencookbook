@@ -1,5 +1,5 @@
 #summary Definition of internationalizable text.
 
 = Text =
-  * Default [TextEntry text entry]
+  * Default text entry (string)
   * [LocalizedTextEntry Localized text entries]
