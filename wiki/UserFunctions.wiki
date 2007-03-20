@@ -42,6 +42,7 @@
     * Intellegent natural language entry. 
        * Lookups. 
        * The enetered text is parsed and structured.
+  * Scale a recipe (see CocktailDB)
 
 =Shopping list=
   * Add unavailable ingredients to the shopping list.
