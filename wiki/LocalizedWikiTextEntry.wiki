@@ -1,0 +1,5 @@
+#summary Definition of the localized Wiki text entry.
+
+= Localized Wiki text entry =
+  * Locale
+  * Value ([WikiString Wiki string])
