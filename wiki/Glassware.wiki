@@ -5,6 +5,7 @@ Type of [Barware].
   * Name
   * Description
   * Volume
+  * Images
 
 == Glasses ==
   * absinthe glass
