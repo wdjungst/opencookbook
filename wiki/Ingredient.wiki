@@ -2,6 +2,7 @@
 
 = Ingredient =
   * Name
+  * Also known as
   * [IngredientType Type]
   * Description
   * [IngredientFlavor Flavors]
