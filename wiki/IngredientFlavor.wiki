@@ -1,6 +1,11 @@
 #summary Flavors of ingredients.
 
 = Flavors of ingredients =
+  * Name
+  * Description
+  * Icons
+
+== List of ingredient flavors ==
   * agave
   * aguardiente
   * alcohol
