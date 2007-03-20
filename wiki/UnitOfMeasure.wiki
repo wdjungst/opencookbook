@@ -1,0 +1,9 @@
+#summary Definition of unit of measure.
+
+= Unit of measure =
+  * Name
+  * Description
+  * Base unit
+  * Conversion into base unit
+
+Units of measures can be converted one into another via the base unit. Base unit is usually an ISO unit for the given measure, like liter or kilogramm.
