@@ -1,8 +1,8 @@
 #summary Recipe Types.
 
 = Recipe Types =
-  * Name
-  * Description
+  * Name ([Text])
+  * Description ([WikiText])
   * Icons
 
 == Drink Types ==
