@@ -1,0 +1,4 @@
+#summary Definition of the text entry.
+
+= Text entry =
+  * Value
