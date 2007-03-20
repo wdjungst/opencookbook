@@ -4,6 +4,7 @@
   * Name
   * Also known as
   * Description
+  * Images
 
 == List of bar tools ==
   * Absinthe spoon
