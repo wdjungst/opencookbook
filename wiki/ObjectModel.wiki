@@ -1,8 +1,10 @@
 #summary Discussion of the object model.
 
-= [Ingredient] =
-[Ingredient]
-  * Name
-  * [IngredientFlavor Flavors]
-  * [IngredientOrigin Origin]
-  * [IngredientType Type]
+= Primary Entities =
+  * [Ingredient]
+  * [Recipe]
+
+= Secondary Entities =
+  * [IngredientFlavor Ingredient Flavor]
+  * [IngredientOrigin Ingredient Origin]
+  * [IngredientType Ingredient Type]
