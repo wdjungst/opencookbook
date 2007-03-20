@@ -3,7 +3,7 @@
 = Glassware =
 Type of [Barware].
   * Name ([Text])
-  * Description ([WikiText])
+  * Description ([WikiText Wiki text])
   * Volume ([Measure])
   * Images
 
