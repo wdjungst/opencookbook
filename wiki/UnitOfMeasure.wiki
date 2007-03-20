@@ -1,7 +1,7 @@
 #summary Definition of unit of measure.
 
 = Unit of measure =
-  * Name
-  * Description
+  * Name ([Text])
+  * Description ([WikiText Wiki text])
 
 == Converting units of measures ==
