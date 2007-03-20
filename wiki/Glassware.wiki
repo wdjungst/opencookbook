@@ -1,0 +1,7 @@
+#summary Definition of the glassware.
+
+= Glassware =
+Type of [Barware].
+  * Name
+  * Description
+  * Volume
