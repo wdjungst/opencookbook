@@ -1,1 +1,7 @@
 #summary Discussion of the object model.
+
+= Ingredient =
+  * Name
+  * [Flavor Flavors]
+  * [Origin]
+  * [IngredientType Type]
