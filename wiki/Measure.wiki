@@ -1,0 +1,5 @@
+#summary Definition of measure.
+
+= Measure =
+  * [Amount]
+  * [UnitOfMeasure Unit of measure]
