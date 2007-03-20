@@ -1,13 +1,13 @@
 #summary Ingredients.
 
 = Ingredient =
-  * Name
-  * Also known as
+  * Name ([Text])
+  * Also known as (string)
   * [IngredientType Type]
-  * Description
+  * Description ([WikiText])
   * [IngredientFlavor Flavors]
   * [IngredientOrigin Origin]
-  * Availability
-  * Substitute
+  * Availability ([Text])
+  * Substitutes ([Ingredient Ingredients])
   * Images
   * Icons (?)
