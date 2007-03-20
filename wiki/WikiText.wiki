@@ -1,0 +1,5 @@
+#summary Definition of the Wiki text.
+
+= Wiki text =
+  * Default value ([WikiString Wiki string])
+  * [LocalizedWikiTextEntry Localized Wiki text entry]
