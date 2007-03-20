@@ -2,9 +2,9 @@
 
 = Glassware =
 Type of [Barware].
-  * Name
-  * Description
-  * Volume
+  * Name ([Text])
+  * Description ([WikiText])
+  * Volume ([Measure])
   * Images
 
 == Glasses ==
