@@ -8,24 +8,24 @@ public class RecipeException extends Exception {
 
   private static final long serialVersionUID = 1L;
 
-  private final String recipeId;
+  private final int recipeId;
 
-  public RecipeException(String recipeId) {
+  public RecipeException(int recipeId) {
     super();
     this.recipeId = recipeId;
   }
 
-  public RecipeException(String recipeId, String message, Throwable cause) {
+  public RecipeException(int recipeId, String message, Throwable cause) {
     super(message, cause);
     this.recipeId = recipeId;
   }
 
-  public RecipeException(String recipeId, String message) {
+  public RecipeException(int recipeId, String message) {
     super(message);
     this.recipeId = recipeId;
   }
 
-  public RecipeException(String recipeId, Throwable cause) {
+  public RecipeException(int recipeId, Throwable cause) {
     super(cause);
     this.recipeId = recipeId;
   }
@@ -34,7 +34,7 @@ public class RecipeException extends Exception {
    * Returns the recipe id.
    * @return Recipe id.
    */
-  public String getRecipeId() {
+  public int getRecipeId() {
     return recipeId;
   }
 
