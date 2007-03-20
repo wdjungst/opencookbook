@@ -1,0 +1,5 @@
+#summary Definition of localized text entries.
+
+= Localized text entries =
+  * Locale
+  * Value (string)
