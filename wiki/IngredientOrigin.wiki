@@ -1,6 +1,11 @@
 #summary Origins of ingredients.
 
 = Origins of ingredients =
+  * Name
+  * Description
+  * Icons
+
+== List of origins ==
   * Alsace
   * Argentina
   * Barbados
