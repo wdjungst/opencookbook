@@ -1,6 +1,10 @@
 #summary Types of ingredients.
 
 = Types of ingredients =
+  * Name
+  * Description
+
+== List of ingredient types ==
   * Agave-based spirits
   * Beers used in mixed drinks
   * Bitters
