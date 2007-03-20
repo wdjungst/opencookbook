@@ -1,9 +1,9 @@
 #summary Bar tools.
 
 = Bar tools =
-  * Name
-  * Also known as
-  * Description
+  * Name ([Text])
+  * Also known as (string)
+  * Description ([WikiText])
   * Images
   * Icons
 
