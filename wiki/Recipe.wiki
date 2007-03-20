@@ -2,8 +2,10 @@
 
 = Recipe =
   * Name
+  * Also known as
   * [RecipeType Type]
   * [Ingredient Ingredients]
   * Description
   * Equipment/[Barware]
   * Сrockery/[Glassware]
+  * Images
