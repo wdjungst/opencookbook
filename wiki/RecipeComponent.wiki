@@ -1,0 +1,5 @@
+#summary Definition of the recipe component.
+
+= Recipe component =
+  * [Measure]
+  * [Ingredient]
