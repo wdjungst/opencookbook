@@ -1,10 +1,9 @@
 #summary Discussion of the object model.
 
-= Primary Entities =
+= Entities =
   * [Ingredient]
   * [Recipe]
-
-= Secondary Entities =
+  * [Barware], [Glassware], [BarTools], [BarMixers]
   * [IngredientFlavor Ingredient Flavor]
   * [IngredientOrigin Ingredient Origin]
   * [IngredientType Ingredient Type]
