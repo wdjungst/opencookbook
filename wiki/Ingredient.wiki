@@ -2,6 +2,10 @@
 
 = Ingredient =
   * Name
+  * [IngredientType Type]
+  * Description
   * [IngredientFlavor Flavors]
   * [IngredientOrigin Origin]
-  * [IngredientType Type]
+  * Availability
+  * Substitute
+  * Images
