@@ -1,0 +1,21 @@
+#summary Recipe Types.
+
+= Recipe Types =
+
+== Drink Types ==
+  * Punches
+  * Fizzes
+  * Rickeys
+  * Flips
+  * Bloody Mary family
+  * Sangarees
+  * Highballs
+  * Cocktails
+  * Scaffas
+  * Juleps
+  * Crustas
+  * Slings
+  * Daiquiris
+  * Margaritas
+  * Fixes
+  * other
