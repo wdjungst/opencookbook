@@ -1,8 +1,8 @@
 #summary Types of ingredients.
 
 = Types of ingredients =
-  * Name
-  * Description
+  * Name ([Text])
+  * Description ([WikiText])
   * Icons
 
 == List of ingredient types ==
