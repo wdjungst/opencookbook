@@ -6,7 +6,6 @@ import org.ocobo.model.Recipe;
 import org.ocobo.test.AbstractDependencyInjectionSpringContextTests;
 
 public class RecipeDaoTest extends AbstractDependencyInjectionSpringContextTests
-//extends AbstractTransactionalSpringContextTests 
 {
 
   private RecipeDao recipeDao;

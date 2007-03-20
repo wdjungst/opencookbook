@@ -13,6 +13,10 @@
 	</parent>
 	<dependencies>
 		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
 		</dependency>
@@ -21,16 +25,12 @@
 			<artifactId>spring</artifactId>
 		</dependency>
 		<dependency>
-				<groupId>commons-collections</groupId>
-				<artifactId>commons-collections</artifactId>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
 		</dependency>
 		<dependency>
-				<groupId>commons-dbcp</groupId>
-				<artifactId>commons-dbcp</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>groovy</groupId>
-			<artifactId>groovy</artifactId>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

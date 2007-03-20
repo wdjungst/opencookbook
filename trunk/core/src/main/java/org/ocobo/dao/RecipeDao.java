@@ -27,4 +27,12 @@ public interface RecipeDao {
    * @return Removed recipe.
    */
   public Recipe removeRecipe(int id) throws RecipeException;
+
+  /**
+   * Removes the recipe.
+   * @param recipe the recipe
+   * @return Removed recipe.
+   */
+  public Recipe removeRecipe(Recipe recipe) throws RecipeException;
+
 }
