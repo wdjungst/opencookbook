@@ -1,0 +1,6 @@
+#summary Definition of the barware.
+
+= Barware =
+  * [Glassware]
+  * [BarMixers Shakers and mixers]
+  * [BarTools Bar tools]
