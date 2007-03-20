@@ -1,8 +1,8 @@
 #summary Flavors of ingredients.
 
 = Flavors of ingredients =
-  * Name
-  * Description
+  * Name ([Text])
+  * Description ([WikiText])
   * Icons
 
 == List of ingredient flavors ==
