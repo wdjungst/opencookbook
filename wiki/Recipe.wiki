@@ -1,0 +1,4 @@
+#summary Definition of the recipe.
+
+= Recipe =
+  * [Ingredient Ingredients]
