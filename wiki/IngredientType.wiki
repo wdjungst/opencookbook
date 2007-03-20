@@ -3,6 +3,7 @@
 = Types of ingredients =
   * Name
   * Description
+  * Icons
 
 == List of ingredient types ==
   * Agave-based spirits
