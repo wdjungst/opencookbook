@@ -7,5 +7,5 @@
   * [RecipeComponent Components]
   * Description
   * Equipment/[Barware]
-  * Сrockery/[Glassware]
+  * Crockery/[Glassware]
   * Images
