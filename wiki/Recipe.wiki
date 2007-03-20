@@ -5,5 +5,5 @@
   * [RecipeType Type]
   * [Ingredient Ingredients]
   * Description
-  * Equipment
+  * Equipment/[Barware]
   * Сrockery/[Glassware]
