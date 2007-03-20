@@ -4,3 +4,6 @@
   * Name
   * [RecipeType Type]
   * [Ingredient Ingredients]
+  * Description
+  * Equipment
+  * Сrockery/[Glassware]
