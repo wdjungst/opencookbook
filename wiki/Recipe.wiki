@@ -4,7 +4,7 @@
   * Name
   * Also known as
   * [RecipeType Type]
-  * [Component Components]
+  * [RecipeComponent Components]
   * Description
   * Equipment/[Barware]
   * Сrockery/[Glassware]
