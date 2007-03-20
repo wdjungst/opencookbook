@@ -1,0 +1,7 @@
+#summary Ingredients.
+
+= Ingredient =
+  * Name
+  * [IngredientFlavor Flavors]
+  * [IngredientOrigin Origin]
+  * [IngredientType Type]
