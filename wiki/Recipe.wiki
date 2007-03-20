@@ -1,4 +1,6 @@
 #summary Definition of the recipe.
 
 = Recipe =
+  * Name
+  * [RecipeType Type]
   * [Ingredient Ingredients]
