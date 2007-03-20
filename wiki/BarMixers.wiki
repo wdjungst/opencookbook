@@ -1,9 +1,9 @@
 #summary Bar mixers and shakers.
 
 = Bar mixer or shaker =
-  * Name
-  * Also known as
-  * Description
+  * Name ([Text])
+  * Also known as (string)
+  * Description ([WikiText Wiki text])
   * Images
   * Icons
 
