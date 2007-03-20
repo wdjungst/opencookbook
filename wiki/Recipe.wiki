@@ -1,11 +1,11 @@
 #summary Definition of the recipe.
 
 = Recipe =
-  * Name
-  * Also known as
+  * Name ([Text])
+  * Also known as (string)
   * [RecipeType Type]
   * [RecipeComponent Components]
-  * Description
+  * Description ([WikiText Wiki text])
   * Equipment/[Barware]
   * Crockery/[Glassware]
   * Images
