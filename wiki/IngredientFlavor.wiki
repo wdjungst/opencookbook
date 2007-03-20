@@ -1,4 +1,4 @@
-#summary Flavors of ingredients
+#summary Flavors of ingredients.
 
 = Flavors of ingredients =
   * agave
