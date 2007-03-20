@@ -1,6 +1,6 @@
 #summary Discussion of the object model.
 
-= Ingredient =
+= [Ingredient] =
   * Name
   * [IngredientFlavor Flavors]
   * [IngredientOrigin Origin]
