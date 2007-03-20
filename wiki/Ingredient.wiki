@@ -10,4 +10,4 @@
   * Availability
   * Substitute
   * Images
-  * Icons
+  * Icons (?)
