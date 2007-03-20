@@ -3,6 +3,7 @@
 = Recipe Types =
   * Name
   * Description
+  * Icons
 
 == Drink Types ==
   * Punches
