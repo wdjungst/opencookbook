@@ -5,7 +5,7 @@
   * Description ([WikiText Wiki text])
 
 == Unit of measures ==
-=== Volumne ===
+=== Volume ===
   * cl
   * oz (U.S. fluid ounce)= 3 cl
   * gill (U.S. gill) = 4 oz (U.S. fluid ounce) = 12 cl
