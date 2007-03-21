@@ -4,7 +4,11 @@
   * Name ([Text])
   * Description ([WikiText Wiki text])
 
-== Unit of measures ==
+Consider:
+  * Measurement system
+  * Conversions
+
+== Units of measures ==
 === Volume ===
   * cl
   * oz (U.S. fluid ounce)= 3 cl
