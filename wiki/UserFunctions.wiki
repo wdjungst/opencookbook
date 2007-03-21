@@ -11,6 +11,15 @@
   * Location
     * Acquire from GeoIP
 
+=Basic=
+  * View a recipe
+    * Scale a recipe
+    * Switch units of measure
+  * List recipes
+  * Search for a recipe
+  * Add a recipe to favorites
+  * Add a recipe to unfavored
+
 =My Bar/My Kitchen=
   * My favorite recipes.
   * My unfavored recipes.
