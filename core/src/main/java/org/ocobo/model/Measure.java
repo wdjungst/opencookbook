@@ -1,5 +1,7 @@
 package org.ocobo.model;
 
+import java.math.BigDecimal;
+
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
@@ -10,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
@@ -17,7 +20,16 @@ import javax.xml.bind.annotation.XmlType;
  */
 @Entity
 @XmlType
+@XmlRootElement(name="measure")
 public class Measure {
+
+	public Measure() {
+	}
+
+	public Measure(BigDecimal amount, Unit unit) {
+		setAmount(new Amount(amount));
+		setUnit(unit);
+	}
 
 	private long id;
 
