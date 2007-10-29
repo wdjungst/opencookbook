@@ -1,180 +1,128 @@
 package org.ocobo.model;
 
 import java.util.Collection;
+import java.util.LinkedList;
 
-import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * Describes the ingredient.
  */
 @Entity
 @Table(name = "ingredient")
+@XmlType(propOrder = { "name", "aliases", "type", "description", "flavors",
+		"origin", "availability" })
+@XmlRootElement(name = "ingredient")
 public class Ingredient {
 
-  private int id;
+	private long id;
 
-  private String title;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@XmlAttribute
+	public long getId() {
+		return id;
+	}
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  public int getId() {
-    return id;
-  }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-  public void setId(int id) {
-    this.id = id;
-  }
+	private Text name;
 
-  @Basic
-  public String getTitle() {
-    return title;
-  }
+	private Collection<Text> aliases;
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
+	private IngredientType type;
 
-  private Text name;
-  private Collection<Text> aliases;
-  private Type type;
-  private WikiText description;
-  private Collection<Flavor> flavors;
-  private Origin origin;
-  private Text availability;
+	private Text description;
 
-  public Text getName() {
-    return name;
-  }
+	private Collection<IngredientFlavor> flavors;
 
-  public void setName(Text name) {
-    this.name = name;
-  }
+	private IngredientOrigin origin;
 
-  public Collection<Text> getAliases() {
-    return aliases;
-  }
+	private Text availability;
 
-  public void setAliases(Collection<Text> aliases) {
-    this.aliases = aliases;
-  }
+	@ManyToOne
+	public Text getName() {
+		return name;
+	}
 
-  public Type getType() {
-    return type;
-  }
+	public void setName(Text name) {
+		this.name = name;
+	}
 
-  public void setType(Type type) {
-    this.type = type;
-  }
+	@ManyToMany
+	@XmlElementWrapper(name="aliases")
+	@XmlElement(name="alias")
+	public Collection<Text> getAliases() {
+		if (aliases == null) {
+			aliases = new LinkedList<Text>();
+		}
+		return aliases;
+	}
 
-  public WikiText getDescription() {
-    return description;
-  }
+	public void setAliases(Collection<Text> aliases) {
+		this.aliases = aliases;
+	}
 
-  public void setDescription(WikiText description) {
-    this.description = description;
-  }
+	@ManyToOne
+	public IngredientType getType() {
+		return type;
+	}
 
-  public Collection<Flavor> getFlavors() {
-    return flavors;
-  }
+	public void setType(IngredientType type) {
+		this.type = type;
+	}
 
-  public void setFlavors(Collection<Flavor> flavors) {
-    this.flavors = flavors;
-  }
+	@ManyToOne
+	public Text getDescription() {
+		return description;
+	}
 
-  public Origin getOrigin() {
-    return origin;
-  }
+	public void setDescription(Text description) {
+		this.description = description;
+	}
 
-  public void setOrigin(Origin origin) {
-    this.origin = origin;
-  }
+	@ManyToMany
+	@XmlElementWrapper(name="flavors")
+	@XmlElement(name="flavor")
+	public Collection<IngredientFlavor> getFlavors() {
+		if (flavors == null) {
+			flavors = new LinkedList<IngredientFlavor>();
+		}
+		return flavors;
+	}
 
-  public Text getAvailability() {
-    return availability;
-  }
+	public void setFlavors(Collection<IngredientFlavor> flavors) {
+		this.flavors = flavors;
+	}
 
-  public void setAvailability(Text availability) {
-    this.availability = availability;
-  }
+	@ManyToOne
+	public IngredientOrigin getOrigin() {
+		return origin;
+	}
 
-  /**
-   * Type of the ingredient.
-   */
-  public static class Type {
+	public void setOrigin(IngredientOrigin origin) {
+		this.origin = origin;
+	}
 
-    private Text name;
-    private WikiText description;
+	@ManyToOne
+	public Text getAvailability() {
+		return availability;
+	}
 
-    public Text getName() {
-      return name;
-    }
-
-    public void setName(Text name) {
-      this.name = name;
-    }
-
-    public WikiText getDescription() {
-      return description;
-    }
-
-    public void setDescription(WikiText description) {
-      this.description = description;
-    }
-  }
-
-  /**
-   * Flavor of the ingredient.
-   */
-  public static class Flavor {
-
-    private Text name;
-    private WikiText description;
-
-    public Text getName() {
-      return name;
-    }
-
-    public void setName(Text name) {
-      this.name = name;
-    }
-
-    public WikiText getDescription() {
-      return description;
-    }
-
-    public void setDescription(WikiText description) {
-      this.description = description;
-    }
-  }
-
-  /**
-   * Origin of the ingredient.
-   */
-  public static class Origin {
-
-    private Text name;
-    private WikiText description;
-
-    public Text getName() {
-      return name;
-    }
-
-    public void setName(Text name) {
-      this.name = name;
-    }
-
-    public WikiText getDescription() {
-      return description;
-    }
-
-    public void setDescription(WikiText description) {
-      this.description = description;
-    }
-  }
+	public void setAvailability(Text availability) {
+		this.availability = availability;
+	}
 }
