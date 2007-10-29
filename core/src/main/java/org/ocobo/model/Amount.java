@@ -2,11 +2,19 @@ package org.ocobo.model;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Basic;
+import javax.persistence.Embeddable;
+import javax.persistence.Transient;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlValue;
+
 /**
  * Describes an amount. Contains a numeric value and can be converted
  * into a fraction.
  * @author valikov
  */
+@Embeddable
+@XmlType
 public class Amount {
 
   /**
@@ -18,6 +26,8 @@ public class Amount {
    * Returns amount value.
    * @return Amount value.
    */
+  @XmlValue
+  @Basic
   public BigDecimal getValue() {
     return value;
   }
@@ -36,6 +46,7 @@ public class Amount {
    * <code>1.33</code> will be converted to <code>1 1/3</code>.
    * @return Amount as fraction.
    */
+  @Transient
   public String getFraction() {
     throw new UnsupportedOperationException("Not implemented yet.");
   }
