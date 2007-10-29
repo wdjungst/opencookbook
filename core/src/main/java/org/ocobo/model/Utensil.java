@@ -1,46 +1,77 @@
 package org.ocobo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlType;
+
+@Entity
+@XmlType
 public class Utensil {
 
-  /**
-   * Name.
-   */
-  private Text name;
+	private long id;
 
-  /**
-   * Description.
-   */
-  private WikiText description;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@XmlAttribute
+	public long getId() {
+		return id;
+	}
 
-  /**
-   * Returns name.
-   * @return name.
-   */
-  public Text getName() {
-    return name;
-  }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-  /**
-   * Sets name.
-   * @param name name.
-   */
-  public void setName(Text name) {
-    this.name = name;
-  }
+	/**
+	 * Name.
+	 */
+	private Text name;
 
-  /**
-   * Returns description.
-   * @return Description.
-   */
-  public WikiText getDescription() {
-    return description;
-  }
+	/**
+	 * Description.
+	 */
+	private Text description;
 
-  /**
-   * Sets description.
-   * @param description description.
-   */
-  public void setDescription(WikiText description) {
-    this.description = description;
-  }
+	/**
+	 * Returns name.
+	 * 
+	 * @return name.
+	 */
+	@ManyToOne
+	public Text getName() {
+		return name;
+	}
+
+	/**
+	 * Sets name.
+	 * 
+	 * @param name
+	 *            name.
+	 */
+	public void setName(Text name) {
+		this.name = name;
+	}
+
+	/**
+	 * Returns description.
+	 * 
+	 * @return Description.
+	 */
+	@ManyToOne
+	public Text getDescription() {
+		return description;
+	}
+
+	/**
+	 * Sets description.
+	 * 
+	 * @param description
+	 *            description.
+	 */
+	public void setDescription(Text description) {
+		this.description = description;
+	}
 }
