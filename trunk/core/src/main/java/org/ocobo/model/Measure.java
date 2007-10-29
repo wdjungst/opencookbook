@@ -1,50 +1,83 @@
 package org.ocobo.model;
 
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Describes the measue. Consists of amount and unit.
  */
+@Entity
+@XmlType
 public class Measure {
 
-  /**
-   * Amount.
-   */
-  private Amount amount;
+	private long id;
 
-  /**
-   * Unit.
-   */
-  private Unit unit;
+	@Id
+	@XmlAttribute
+	public long getId() {
+		return id;
+	}
 
-  /**
-   * Returns the amount.
-   * @return amount.
-   */
-  public Amount getAmount() {
-    return amount;
-  }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-  /**
-   * Sets the amount.
-   * @param amount amount.
-   */
-  public void setAmount(Amount amount) {
-    this.amount = amount;
-  }
+	/**
+	 * Amount.
+	 */
+	private Amount amount;
 
-  /**
-   * Returns the unit.
-   * @return Unit.
-   */
-  public Unit getUnit() {
-    return unit;
-  }
+	/**
+	 * Unit.
+	 */
+	private Unit unit;
 
-  /**
-   * Sets the unit.
-   * @param unit unit.
-   */
-  public void setUnit(Unit unit) {
-    this.unit = unit;
-  }
+	/**
+	 * Returns the amount.
+	 * 
+	 * @return amount.
+	 */
+	@Embedded
+	@AttributeOverrides( { @AttributeOverride(name = "value", column = @Column(name = "AMOUNT")) })
+	public Amount getAmount() {
+		return amount;
+	}
+
+	/**
+	 * Sets the amount.
+	 * 
+	 * @param amount
+	 *            amount.
+	 */
+	public void setAmount(Amount amount) {
+		this.amount = amount;
+	}
+
+	/**
+	 * Returns the unit.
+	 * 
+	 * @return Unit.
+	 */
+	@ManyToOne
+	public Unit getUnit() {
+		return unit;
+	}
+
+	/**
+	 * Sets the unit.
+	 * 
+	 * @param unit
+	 *            unit.
+	 */
+	public void setUnit(Unit unit) {
+		this.unit = unit;
+	}
 
 }
