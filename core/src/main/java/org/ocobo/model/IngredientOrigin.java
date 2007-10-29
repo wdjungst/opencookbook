@@ -15,6 +15,21 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType
 public class IngredientOrigin {
 	
+	public IngredientOrigin() {
+
+	}
+
+	public IngredientOrigin(String name) {
+		setName(new Text(name));
+
+	}
+
+	public IngredientOrigin(String name, String description) {
+		setName(new Text(name));
+		setDescription(new Text(description));
+	}
+
+	
 	private long id;
 	
 	@Id

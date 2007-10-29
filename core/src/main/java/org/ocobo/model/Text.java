@@ -8,6 +8,7 @@ import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlValue;
 
 /**
  * Represents internationalizable text.
@@ -18,6 +19,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Text")
 @Entity
 public class Text {
+
+	public Text() {
+	}
+
+	public Text(String defaultValue) {
+		setDefaultValue(defaultValue);
+	}
 
 	/**
 	 * Returns text value for the default locale.
@@ -47,8 +55,8 @@ public class Text {
 	 */
 	private String defaultValue;
 
-	@XmlAttribute(name = "value")
 	@Id
+	@XmlValue
 	public String getDefaultValue() {
 		return defaultValue;
 	}
