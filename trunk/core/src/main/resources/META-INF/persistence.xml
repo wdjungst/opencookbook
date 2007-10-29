@@ -2,8 +2,8 @@
 <persistence version="1.0"
 	xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="org.ocobo.model">
-		<class>org.ocobo.model.Recipe</class>
-		<class>org.ocobo.model.Ingredient</class>
+		<class>org.ocobo.model.Text</class>
+		<class>org.ocobo.model.SimpleText</class>
 		<properties>
 			<property name="hibernate.dialect" 
 				value="org.hibernate.dialect.HSQLDialect"/>

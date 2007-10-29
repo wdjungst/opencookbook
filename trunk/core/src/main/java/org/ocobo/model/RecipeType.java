@@ -9,41 +9,40 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * Type of the ingredient.
+ * Type of the recipe.
  */
 @Entity
-@XmlType
-public class IngredientType {
-	
-	public IngredientType() {
+@XmlType(propOrder = { "name", "description" })
+public class RecipeType {
 
-	}
-
-	public IngredientType(String name) {
-		setName(new Text(name));
-
-	}
-
-	public IngredientType(String name, String description) {
-		setName(new Text(name));
-		setDescription(new Text(description));
-	}
-	
-
-	private int id;
+	private long id;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@XmlAttribute
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
+	public RecipeType() {
+	}
+
+	public RecipeType(String name) {
+		setName(new Text(name));
+	}
+
+	public RecipeType(String name, String description) {
+		setName(new Text(name));
+		setDescription(new Text(description));
+	}
+
 	private Text name;
+
+	private Text description;
 
 	@ManyToOne
 	public Text getName() {
@@ -53,8 +52,6 @@ public class IngredientType {
 	public void setName(Text name) {
 		this.name = name;
 	}
-
-	private Text description;
 
 	@ManyToOne
 	public Text getDescription() {

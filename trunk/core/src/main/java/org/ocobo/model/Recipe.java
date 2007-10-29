@@ -1,172 +1,126 @@
 package org.ocobo.model;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.LinkedList;
 
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * Describes the recipe.
  */
 @Entity
 @Table(name = "recipe")
+@XmlRootElement(name="recipe")
+@XmlType(propOrder = { "name", "aliases", "type", "description", "components",
+		"utensils", "vessel" })
 public class Recipe {
 
-  private int id = -1;
+	private int id = -1;
 
-  private String title;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@XmlAttribute
+	public int getId() {
+		return id;
+	}
 
-  private List<Ingredient> ingredients;
+	public void setId(int id) {
+		this.id = id;
+	}
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  public int getId() {
-    return id;
-  }
+	private Text name;
 
-  public void setId(int id) {
-    this.id = id;
-  }
+	private Collection<Text> aliases;
 
-  @Basic
-  public String getTitle() {
-    return title;
-  }
+	private RecipeType type;
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
+	private Collection<RecipeComponent> components;
 
-  @ManyToMany(targetEntity = Ingredient.class, cascade = CascadeType.ALL)
-  public List<Ingredient> getIngredients() {
-    if (ingredients == null) {
-      ingredients = new ArrayList<Ingredient>(5);
-    }
-    return ingredients;
-  }
+	private Text description;
 
-  public void setIngredients(List<Ingredient> ingredients) {
-    this.ingredients = ingredients;
-  }
+	private Collection<Utensil> utensils;
 
-  private Text name;
-  private Collection<Text> aliases;
-  private Type type;
-  private Collection<Component> components;
-  private WikiText description;
-  private Collection<Utensil> utensils;
-  private Vessel vessel;
+	private Vessel vessel;
 
-  public Text getName() {
-    return name;
-  }
+	@ManyToOne
+	public Text getName() {
+		return name;
+	}
 
-  public void setName(Text name) {
-    this.name = name;
-  }
+	public void setName(Text name) {
+		this.name = name;
+	}
 
-  public Collection<Text> getAliases() {
-    return aliases;
-  }
+	@ManyToMany
+	public Collection<Text> getAliases() {
+		if (aliases == null) {
+			aliases = new LinkedList<Text>();
+		}
+		return aliases;
+	}
 
-  public void setAliases(Collection<Text> aliases) {
-    this.aliases = aliases;
-  }
+	public void setAliases(Collection<Text> aliases) {
+		this.aliases = aliases;
+	}
 
-  public Type getType() {
-    return type;
-  }
+	@ManyToOne
+	public RecipeType getType() {
+		return type;
+	}
 
-  public void setType(Type type) {
-    this.type = type;
-  }
+	public void setType(RecipeType type) {
+		this.type = type;
+	}
 
-  public Collection<Component> getComponents() {
-    return components;
-  }
+	@OneToMany
+	public Collection<RecipeComponent> getComponents() {
+		if (components == null) {
+			components = new LinkedList<RecipeComponent>();
+		}
+		return components;
+	}
 
-  public void setComponents(Collection<Component> components) {
-    this.components = components;
-  }
+	public void setComponents(Collection<RecipeComponent> components) {
+		this.components = components;
+	}
 
-  public WikiText getDescription() {
-    return description;
-  }
+	@ManyToOne
+	public Text getDescription() {
+		return description;
+	}
 
-  public void setDescription(WikiText description) {
-    this.description = description;
-  }
+	public void setDescription(Text description) {
+		this.description = description;
+	}
 
-  public Collection<Utensil> getUtensils() {
-    return utensils;
-  }
+	@ManyToMany
+	public Collection<Utensil> getUtensils() {
+		if (utensils == null) {
+			utensils = new LinkedList<Utensil>();
+		}
+		return utensils;
+	}
 
-  public void setUtensils(Collection<Utensil> utensils) {
-    this.utensils = utensils;
-  }
+	public void setUtensils(Collection<Utensil> utensils) {
+		this.utensils = utensils;
+	}
 
-  public Vessel getVessel() {
-    return vessel;
-  }
+	@ManyToOne
+	public Vessel getVessel() {
+		return vessel;
+	}
 
-  public void setVessel(Vessel vessel) {
-    this.vessel = vessel;
-  }
-
-  /**
-   * Type of the recipe.
-   */
-  public static class Type {
-
-    private Text name;
-    private WikiText description;
-
-    public Text getName() {
-      return name;
-    }
-
-    public void setName(Text name) {
-      this.name = name;
-    }
-
-    public WikiText getDescription() {
-      return description;
-    }
-
-    public void setDescription(WikiText description) {
-      this.description = description;
-    }
-  }
-
-  /**
-   * Recipe component consiste of a measure and ingredient.
-   */
-  public static class Component {
-    private Measure measure;
-    private Ingredient ingredient;
-
-    public Measure getMeasure() {
-      return measure;
-    }
-
-    public void setMeasure(Measure measure) {
-      this.measure = measure;
-    }
-
-    public Ingredient getIngredient() {
-      return ingredient;
-    }
-
-    public void setIngredient(Ingredient ingredient) {
-      this.ingredient = ingredient;
-    }
-  }
+	public void setVessel(Vessel vessel) {
+		this.vessel = vessel;
+	}
 }

@@ -15,6 +15,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "IngredientFlavor")
 public class IngredientFlavor {
 
+	public IngredientFlavor() {
+
+	}
+
+	public IngredientFlavor(String name) {
+		setName(new Text(name));
+
+	}
+
+	public IngredientFlavor(String name, String description) {
+		setName(new Text(name));
+		setDescription(new Text(description));
+	}
+
 	private int id;
 
 	@Id
